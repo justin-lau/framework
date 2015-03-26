@@ -317,7 +317,6 @@ class Str {
 			return static::$snakeCache[$key];
 		}
 
-
 		if ( ! ctype_lower($value))
 		{
 			$value = strtolower(preg_replace('/(.)(?=[A-Z])/', '$1'.$delimiter, $value));
